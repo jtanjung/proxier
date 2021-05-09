@@ -1,14 +1,18 @@
 <?php namespace Proxier\Bases;
 
-use Pehape\Bases\BaseEventClass;
+use Proxier\Bases\BaseDriver;
 use Pehape\Services\CURLService;
+use Pehape\Traits\HasCURLService;
+use Pehape\Traits\HasSeedLoader;
 
 /**
  * Class BaseCurlDriver
  * @package Proxier\Bases
  */
-abstract class BaseCurlDriver extends BaseEventClass
+abstract class BaseCurlDriver extends BaseDriver
 {
+
+    use HasCURLService, HasSeedLoader;
 
     /**
      * Class constructor

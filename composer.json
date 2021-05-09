@@ -11,7 +11,7 @@
     }
   ],
   "require": {
-      "jtanjung/pehape": "^1.0"
+      "jtanjung/pehape": ">=v0.1-beta"
   },
   "autoload": {
     "psr-4": {
