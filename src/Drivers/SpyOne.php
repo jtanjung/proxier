@@ -82,9 +82,6 @@ class SpyOne extends BaseWebDriver
 
         // Notify event listener about process completion
         static::__trigger('OnComplete', [$this->cache]);
-
-        // Terminate browser
-        $this->quit();
     }
 
 }
