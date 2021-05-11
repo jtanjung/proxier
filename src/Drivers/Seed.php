@@ -4,7 +4,7 @@
  * A dummy driver used by ProxySeeder to fetch the cache
  */
 
-use Proxier\Bases\BaseDriver;
+use Pehape\Bases\BaseDriver;
 use Facebook\WebDriver\WebDriverBy;
 use Facebook\WebDriver\WebDriverExpectedCondition;
 use Pehape\Configs\ProxyConfig;

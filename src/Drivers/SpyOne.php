@@ -1,6 +1,6 @@
 <?php namespace Proxier\Drivers;
 
-use Proxier\Bases\BaseWebDriver;
+use Pehape\Bases\BaseWebDriver;
 use Facebook\WebDriver\WebDriverBy;
 use Facebook\WebDriver\WebDriverExpectedCondition;
 use Pehape\Configs\ProxyConfig;
@@ -64,7 +64,7 @@ class SpyOne extends BaseWebDriver
             $this->cache->$index = new ProxyConfig([
               "IP" => $host[0],
               "Port" => (int)$host[1],
-              "Type" => $type,
+              "Type" => strtoupper($type),
               "HostName" => $hostname,
               "Location" => $location,
               "Latency" => (float)$latency
