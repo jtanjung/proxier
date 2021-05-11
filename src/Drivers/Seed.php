@@ -5,10 +5,6 @@
  */
 
 use Pehape\Bases\BaseDriver;
-use Facebook\WebDriver\WebDriverBy;
-use Facebook\WebDriver\WebDriverExpectedCondition;
-use Pehape\Configs\ProxyConfig;
-use Pehape\Helpers\Text;
 
 /**
  * Class Seed
