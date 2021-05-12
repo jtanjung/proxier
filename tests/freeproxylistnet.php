@@ -1,5 +1,4 @@
 <?php
-date_default_timezone_set( "Asia/Jakarta" );
 require_once "../vendor/autoload.php";
 
 use Proxier\ProxySeeder;
@@ -14,6 +13,10 @@ $seeder->Bind('OnSeeding', function($value){
 $seeder->Bind('OnComplete', function($value){
   echo "\nComplete...\n";
   echo $value->count() ." proxy found.";
+});
+$seeder->Bind('OnError', function($msg, $exc){
+  echo "Message = '$msg'\n";
+  // throw $exc;
 });
 $spyone = $seeder->FreeProxyListNet();
 $spyone->SetTimeOut(60);

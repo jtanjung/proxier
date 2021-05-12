@@ -1,5 +1,4 @@
 <?php
-date_default_timezone_set( "Asia/Jakarta" );
 require_once "../vendor/autoload.php";
 
 use Proxier\ProxySeeder;
@@ -15,6 +14,10 @@ $tester = new ProxyTester();
 //$tester->SetProxy($proxy);
 $tester->Bind('OnProxy', function()use($proxy){
   return $proxy;
+});
+$seeder->Bind('OnError', function($msg, $exc){
+  echo "Message = '$msg'\n";
+  // throw $exc;
 });
 $tester->Bind('OnComplete', function($info, $status, $error, $message){
   echo json_encode($info) . PHP_EOL;
