@@ -25,11 +25,11 @@ class SpyOne extends BaseWebDriver
     }
 
     /**
-     * A method to extract the seed data.
+     * A method to extract informations from the page dom/response.
      *
      * @return self
      */
-    protected function doseed()
+    protected function doextract()
     {
         /** Find select field to change proxy count **/
         $this->instance->findElement(WebDriverBy::id('xpp'))
