@@ -15,7 +15,7 @@ $tester = new ProxyTester();
 $tester->Bind('OnProxy', function()use($proxy){
   return $proxy;
 });
-$seeder->Bind('OnError', function($msg, $exc){
+$tester->Bind('OnError', function($msg, $exc){
   echo "Message = '$msg'\n";
   // throw $exc;
 });

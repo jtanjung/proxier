@@ -18,13 +18,13 @@ $seeder->Bind('OnError', function($msg, $exc){
   echo "Message = '$msg'\n";
   // throw $exc;
 });
-$spyone = $seeder->FreeProxyListNet();
-$spyone->SetTimeOut(60);
-$spyone->Seed();
+$free = $seeder->FreeProxyListNet();
+$free->SetTimeOut(60);
+$free->Seed();
 echo "\n";
 
 // Try to get random proxy from the cache
 echo "Get a random proxy....\n";
 // Call Get function to get a random entry, or pass md5 value of IP:Port
-$proxy = $spyone->Get();
+$proxy = $free->Get();
 echo json_encode($proxy) . "\n";
