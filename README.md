@@ -86,7 +86,3 @@ $tester->Bind('OnError', function($msg, $exc){
 $tester->Run();
 ```
 See more examples [here](https://github.com/jtanjung/proxier/tree/main/tests)
-
-## Credits
-
-- [Julian](https://github.com/jtanjung)
