@@ -34,8 +34,8 @@ class ProxyTester extends BaseEventClass
      */
     protected function Run()
     {
-        /** Set google.com as testing domain **/
-        $this->instance->SetUrl('https://www.google.com');
+        /** Set example.com as testing domain **/
+        $this->instance->SetUrl('https://example.com/');
         /** Send request **/
         $this->instance->Execute();
         /** Trigger on complete event listener **/
