@@ -10,6 +10,26 @@ Via Composer
 composer require jtanjung/proxier
 ```
 
+## Requirements
+
+This package require a service from [jtanjung/pehape](https://github.com/jtanjung/pehape) which contain several webdriver executable files that are needed by WebPageService to run its functionalities.
+As for the default webdrivers, please refer to these 3 different browser below:
+
+* Chrome v90.x
+* Firefox v75.0
+* Opera v75.x
+
+### Links
+
+For other version of the webdriver, please follow these links below:
+
+* [ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/downloads)
+* [GeckoDriver for Firefox](https://github.com/mozilla/geckodriver/releases)
+* [OperaDriver](https://github.com/operasoftware/operachromiumdriver/releases)
+
+Note: The version of the browser and its driver must be compatible!
+
+
 ## How to use
 
 
